@@ -1,0 +1,124 @@
+/*Nav bar & jumbotron*/
+.logo{
+  height: 60px;
+  width: 80px;
+  border: 3px solid snow;
+  padding: 2px;
+  position: absolute;
+  margin-left: 10px;
+}
+
+.leftLetter, .rightLetter{
+  display: inline-block;
+  font-size: 31px;
+  font-family: fantasy;
+  color: black;
+  width: 50%;
+  float: left;
+}
+.leftLetter{
+  padding-right: 5px;
+  position: relative;
+  /*left: 2px;*/
+  top: 4px;
+  box-sizing: border-box;
+}
+
+.rightLetter{
+  border-left: 2px solid snow;
+  padding-left: 5px;
+  position: relative;
+  top: 4px;
+  box-sizing: border-box;
+}
+
+.jumbotron{
+  background: transparent;
+  background-color: grey;
+  /*opacity: .5;*/
+  height: 500px;
+  /*background-image: url("http://www.twitterevolutions.com/bgs/blue-pattern-twitter-background.jpg") ;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.nav-list{
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.nav-list li{
+  font-size: 20px;
+  display: inline-block;
+  color: snow;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.navbar-toggle{
+  background-color: snow;
+  opacity: .9;
+}
+
+/*shouldn't this be 691px???*/
+@media (max-width: 767px){
+  .navbar-collapse{
+    float: left; 
+    display: inline-block;
+    position: relative;
+    
+  }   
+}
+
+.navbar-toggle .icon-bar:nth-of-type(1) {
+    top: 1px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+    top: 2px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(3) {
+    top: 3px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(4) {
+    top: 4px;
+}
+
+.navbar-toggle .icon-bar {
+    position: relative;
+    transition: all 500ms ease-in-out;
+    background-color: black;
+}
+/*
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+    top: 6px;
+    transform: rotate(45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+    background-color: transparent;
+}
+
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+    top: -6px;
+    transform: rotate(-45deg);
+}*/
+/*body*/
+
+.home-header{
+  border-bottom: 1px solid black;
+  display: inline-block;
+  box-shadow: 10px 10px 10px;
+  font-size: 30px;
+}
+
+.header-container{
+}
+
+.home-content{
+  height: 500px;
+}
