@@ -15,9 +15,14 @@ $.ajax({
   data:{"api_key": "K12MDiQTwWQuiMdrUiFjEwX6Qn1UmRT8f0X3EepEMp5ueJbDB9"},
   }).done(function(data){
     // $blogbody.html("<p>'Hello'</p>");
-    $blogbody.html(data.response.posts[0].body);
-    console.log(data.response.posts[0].body);
-});
+    var allPosts = data.response.posts;
+    // console.log(data.response.posts[0].body);
 
+  allPosts.forEach(function(element, index){
+    console.log(allPosts[index]);
+    $blogbody.append(allPosts[index].body);
+    $blogbody.append("<br></br>");
+  });
+});
 
 });

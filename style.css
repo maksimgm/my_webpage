@@ -2,17 +2,18 @@
 .logo{
   height: 60px;
   width: 80px;
-  border: 3px solid #ADD8E6;
+  border: 3px solid rgb(108,158,222);
   padding: 2px;
   position: absolute;
   margin-left: 10px;
+  /*opacity: .9;*/
 }
 
 .leftLetter, .rightLetter{
   display: inline-block;
   font-size: 31px;
   font-family: fantasy;
-  color: #ADD8E6;
+  color: rgb(247,73,73);
   width: 50%;
   float: left;
 }
@@ -25,7 +26,7 @@
 }
 
 .rightLetter{
-  border-left: 2px solid #ADD8E6;
+  border-left: 2px solid rgb(108,158,222);
   padding-left: 5px;
   position: relative;
   top: 4px;
@@ -59,7 +60,7 @@
   position: relative;
  /* background: transparent;*/
   /*opacity: .2;*/
-  height: 500px;
+  height: 550px;
   /*background-image: url("https://pixabay.com/get/e7d1c468f57263bc55fb/1441143885/golden-gate-bridge-690264_1280.jpg?direct");
   background-position: center;*/
   -webkit-background-size: cover;
@@ -142,6 +143,7 @@ a:focus {
 .desktop {
   display: block;
   overflow: hidden;
+  width: 100%;
 }
 .desktop a {
   background-color: #66CCFF;
@@ -165,13 +167,26 @@ a:focus {
   .desktop {
     display: none;
   }
+  .writing-wrapper{
+    /*margin-top: 250px;*/
+  }  
 }
 
 /*body*/
 
 body{
-  /*width: 100%;*/
-  /*background: url("https://pixabay.com/get/0c367a4c1a85589cc292/1441212974/stars-912134_1280.jpg?direct") center center no-repeat fixed;*/
+  margin-bottom: 80px;
+}
+
+.body-p{
+  font-size: 14px;
+  font-family: times;
+}
+
+.blogbody a{
+  text-decoration: none;
+  background: transparent;
+  border: none;
 }
 
 .home-header{
@@ -186,12 +201,53 @@ body{
   margin: 0 auto;
   background: #ADD8E6;
   width: 80%
-  opacity: .9;
 }
 
 .home-content p{
   line-height: 1.75;
 }
+
+.contact-submit {
+   border-top: 1px solid #d95e5e;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#346c91), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #346c91, #65a9d7);
+   background: -moz-linear-gradient(top, #346c91, #65a9d7);
+   background: -ms-linear-gradient(top, #346c91, #65a9d7);
+   background: -o-linear-gradient(top, #346c91, #65a9d7);
+   padding: 8.5px 17px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #ffffff;
+   font-size: 13px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   display: inline-block;
+   /*margin-bottom: 30px;*/
+   }
+.contact-submit:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #d44944;
+   }
+.contact-submit:active {
+   border-top-color: #359de3;
+   background: #359de3;
+   }
+
+.form-group{
+  padding-top: 20px;
+  padding-bottom: 20px; 
+}
+
+
+
 
 /*footer*/
 
@@ -200,25 +256,35 @@ body{
 }
 
 .icon-wrapper{
-  width: 235px;
+  width: 250px;
   margin: 0 auto;
 }
 
 /*blog.html*/
 
-.writing{
+.writing-wrapper .row{
+  height: 100px;
+  width: 330px;
 }
 
 .writing-wrapper{
-  height: 20px;
-  width: 300px;
-  display: inline;
+  height: 100px;
+  width: 330px;
+  margin-bottom: none;
+  margin-top: 240px;
+  opacity: .80;
+  /*height: 20px;
+  width: 500px;
+  padding: 10px;
+  display: inline-block;*/
 }
 
 .writing-wrapper p{
-  color: snow;
-  font-size: 20px;
-  font-family: helvetica;
+  text-align: center;
+  color: beige;
+  width: 100%
+  font-size: 18px;
+  font-family: times;
   font-style: italic;
 }
 
@@ -226,4 +292,5 @@ body{
   color: snow; 
   font-weight: bold;
   font-size: 24px;
+  text-align: center;
 }
