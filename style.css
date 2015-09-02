@@ -33,19 +33,19 @@
 }
 
 .jumbotron-home{
-  background: url("https://pixabay.com/get/ae6f0e241c5471cd9820/1441171745/fractal-441254_1280.jpg?direct") no-repeat center center fixed;
+  background: url("https://pixabay.com/static/uploads/photo/2014/09/10/23/24/fractal-441254_640.jpg") no-repeat center center ;
 }
 
 .jumbotron-blog{
-  background: url("https://pixabay.com/static/uploads/photo/2015/03/26/10/24/birds-691274_640.jpg") no-repeat center center fixed;
+  background: url("https://pixabay.com/static/uploads/photo/2015/07/15/11/52/architecture-846087_640.jpg") no-repeat center center ;
 }
 
 .jumbotron-contact{
-  background: url("https://pixabay.com/static/uploads/photo/2015/07/27/11/13/city-862343_640.jpg") no-repeat center center fixed;
+  background: url("https://pixabay.com/static/uploads/photo/2015/01/06/08/00/color-589981_640.jpg") no-repeat center center ;
 }
 
 .jumbotron-resume{
-  background: url("https://pixabay.com/static/uploads/photo/2015/08/27/21/42/computer-911165_640.jpg") no-repeat center center fixed;
+  background: url("https://pixabay.com/get/5bec690cd2d147f89aa5/1441211691/technology-792180_1280.jpg?direct") no-repeat center center ;
 }
 
 .jumbotron{
@@ -187,6 +187,11 @@ a:focus {
 
 .footer_button{
   border-radius: 5px;
+}
+
+.icon-wrapper{
+  width: 250px;
+  margin: 0 auto;
 }
 
 /*blog.html*/
