@@ -2,7 +2,7 @@
 .logo{
   height: 60px;
   width: 80px;
-  border: 3px solid snow;
+  border: 3px solid #ADD8E6;
   padding: 2px;
   position: absolute;
   margin-left: 10px;
@@ -12,7 +12,7 @@
   display: inline-block;
   font-size: 31px;
   font-family: fantasy;
-  color: black;
+  color: #ADD8E6;
   width: 50%;
   float: left;
 }
@@ -25,67 +25,48 @@
 }
 
 .rightLetter{
-  border-left: 2px solid snow;
+  border-left: 2px solid #ADD8E6;
   padding-left: 5px;
   position: relative;
   top: 4px;
   box-sizing: border-box;
 }
 
+.jumbotron-home{
+  background: url("https://pixabay.com/get/94f74523a46f8449d682/1441149855/golden-gate-bridge-690264_1280.jpg?direct") no-repeat 100%;
+}
+
+.jumbotron-blog{
+  background: url("https://pixabay.com/static/uploads/photo/2015/02/19/07/13/grand-canyon-641826_640.jpg") no-repeat 100%;
+}
+
+.jumbotron-contact{
+  background: url("https://pixabay.com/static/uploads/photo/2015/07/27/11/13/city-862343_640.jpg") no-repeat 100%;
+}
+
+.jumbotron-resume{
+  background: url("https://pixabay.com/static/uploads/photo/2015/08/27/21/42/computer-911165_640.jpg") no-repeat 100%;
+}
+
 .jumbotron{
+  max-width: 100%; 
+  /*min-width: 100%;*/
+  /*background-position: center;*/
   position: relative;
-  background: transparent;
-  background-color: grey;
-  /*opacity: .5;*/
+ /* background: transparent;*/
+  /*opacity: .2;*/
   height: 500px;
-  /*background-image: url("http://www.twitterevolutions.com/bgs/blue-pattern-twitter-background.jpg") ;*/
+  /*background-image: url("https://pixabay.com/get/e7d1c468f57263bc55fb/1441143885/golden-gate-bridge-690264_1280.jpg?direct");
+  background-position: center;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.contact, .home, .blog, .resume{
-
-}
-
-.nav-list{
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.nav-list li{
-  font-size: 20px;
-  display: block;
-  overflow: hidden;
-  /*width: 20%;*/
-  color: snow;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-/*.navbar-toggle{
-  background-color: snow;
-  opacity: .9;
-  position: absolute;
-  overflow: hidden;
-  transform: rotate(90deg);
-}*/
-
-/*shouldn't this be 691px???*/
-@media (max-width: 767px){
-   .mobile{
-    display: block;
-    }
-    .desktop{
-      display: none;
-    }
-
-  }   
-}
 
 html {
-  height: 2000px;
+  height: 1000px;
 }
 .mobile {
   display: none;
@@ -93,19 +74,20 @@ html {
   position: absolute;
   width: 100%;
   top: 0;
+  opacity: .7;
 }
 .mobile div {
   display: none;
 }
 .mobile button {
   position: absolute;
-  top: 15px;
+  top: 40px;
   right: 15px;
   border: 0;
   text-indent: 200%;
   overflow: hidden;
-  background: rgba(255,255,255,0.8) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
-  border: 1px solid #ddd;
+  background: #ADD8E6 url("http://i.imgur.com/vKRaKDX.png") center no-repeat ;
+  border: 1px solid #003399;
   border-radius: 3px;
   background-size: 80%;
   width: 30px;
@@ -125,12 +107,14 @@ html {
   display: block;
   width: 51%;
   float: right;
+  font-family: fantasy;
+  font-size: 20px;
 }
 a {
   background: #eee;
   text-align: center;
   padding: 20px 0;
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid black;
   text-decoration: none;
   color: #222;
   font-weight: bold;
@@ -138,19 +122,24 @@ a {
 a:hover,
 a:active,
 a:focus {
-  background: #e7e7e7;
+  background: #ADD8E6;
 }
+
 .desktop {
   display: block;
   overflow: hidden;
 }
 .desktop a {
-  background-color: grey;
+  background-color: #66CCFF;
   width: 25%;
+  opacity: .7;
   float: left;
+  font-family: fantasy;
+  font-size: 24px;
   /*border-right: 1px solid black;*/
   box-sizing: border-box;
 }
+
 .desktop a:last-child {
   /*border-bottom: 1px solid green;*/
 }
@@ -167,10 +156,9 @@ a:focus {
 /*body*/
 
 .home-header{
-  border-bottom: 1px solid black;
   margin-bottom: 20px;
   display: inline-block;
-  box-shadow: 10px 10px 10px;
+  text-shadow: 3px 3px teal;
   font-size: 30px;
 }
 
@@ -179,4 +167,43 @@ a:focus {
 
 .home-content{
   height: 500px;
+}
+
+/*footer*/
+.footer{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  back
+  text-align: center;
+  /*background-color: navy*/ 
+}
+.footer a{
+  text-align: center;
+
+}
+
+/*blog.html*/
+.blogbody{
+
+}
+.writing{
+}
+
+.writing-wrapper{
+  height: 20px;
+  width: 300px;
+  display: inline;
+}
+
+.writing-wrapper p{
+  color: snow;
+  font-size: 20px;
+  font-family: helvetica;
+  font-style: italic;
+}
+
+.write-author{
+  color: snow; 
+  font-weight: bold;
+  font-size: 24px;
 }
