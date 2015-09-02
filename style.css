@@ -33,19 +33,19 @@
 }
 
 .jumbotron-home{
-  background: url("https://pixabay.com/static/uploads/photo/2014/09/10/23/24/fractal-441254_640.jpg") no-repeat center center ;
+  background: url("fractal.jpg") no-repeat center center ;
 }
 
 .jumbotron-blog{
-  background: url("https://pixabay.com/static/uploads/photo/2015/07/15/11/52/architecture-846087_640.jpg") no-repeat center center ;
+  background: url("architecture.jpg") no-repeat center center ;
 }
 
 .jumbotron-contact{
-  background: url("https://pixabay.com/static/uploads/photo/2015/01/06/08/00/color-589981_640.jpg") no-repeat center center ;
+  background: url("coffee-beans.jpg") no-repeat center center ;
 }
 
 .jumbotron-resume{
-  background: url("https://pixabay.com/get/5bec690cd2d147f89aa5/1441211691/technology-792180_1280.jpg?direct") no-repeat center center ;
+  background: url("bridge.jpg") no-repeat center center ;
 }
 
 .jumbotron{
@@ -153,10 +153,10 @@ a:focus {
   /*border-right: 1px solid black;*/
   box-sizing: border-box;
 }
-
+/*
 .desktop a:last-child {
-  /*border-bottom: 1px solid green;*/
-}
+  border-bottom: 1px solid green;
+}*/
 
 @media (max-width: 800px) {
   .mobile {
@@ -169,18 +169,28 @@ a:focus {
 
 /*body*/
 
+body{
+  /*width: 100%;*/
+  /*background: url("https://pixabay.com/get/0c367a4c1a85589cc292/1441212974/stars-912134_1280.jpg?direct") center center no-repeat fixed;*/
+}
+
 .home-header{
-  margin-bottom: 20px;
   display: inline-block;
-  text-shadow: 3px 3px teal;
+  font-weight: bold;
+  font-family: Palatino;
   font-size: 30px;
+  margin: 10px auto;
 }
 
-.header-container{
+.bg-body-home{
+  margin: 0 auto;
+  background: #ADD8E6;
+  width: 80%
+  opacity: .9;
 }
 
-.home-content{
-  height: 500px;
+.home-content p{
+  line-height: 1.75;
 }
 
 /*footer*/
@@ -190,14 +200,12 @@ a:focus {
 }
 
 .icon-wrapper{
-  width: 250px;
+  width: 235px;
   margin: 0 auto;
 }
 
 /*blog.html*/
-.blogbody{
 
-}
 .writing{
 }
 
