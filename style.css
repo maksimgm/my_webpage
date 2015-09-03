@@ -61,8 +61,103 @@
   background-size: cover;
 }
 
+.animated-jumbotron{
+    -webkit-animation-duration: 2s; 
+    animation-duration: 2s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-out; 
+    animation-timing-function: ease-out; 
+}
+
+@-webkit-keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+@keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+.fadeIn { 
+    -webkit-animation-name: fadeIn; 
+    animation-name: fadeIn; 
+}
+
+.animated-nav { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-in; 
+    animation-timing-function: ease-in; 
+} 
+
+@-webkit-keyframes fadeInDown { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(-20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInDown { 
+  0% { 
+      opacity: 0; 
+      transform: translateY(-20px); 
+  } 
+  100% { 
+      opacity: 1; 
+      transform: translateY(0); 
+  } 
+} 
+
+.fadeInDown { 
+  -webkit-animation-name: fadeInDown; 
+  animation-name: fadeInDown; 
+}
+
+.animated-logo{ 
+  -webkit-animation-duration: 1s; 
+  animation-duration: 1s; 
+  -webkit-animation-fill-mode: both; 
+  animation-fill-mode: both; 
+  -webkit-animation-timing-function: linear; 
+  animation-timing-function: linear; 
+} 
+
+@-webkit-keyframes fadeInLeft { 
+  0% { 
+      opacity: 0; 
+      -webkit-transform: translateX(-20px); 
+  } 
+  100% { 
+      opacity: 1; 
+      -webkit-transform: translateX(0); 
+  } 
+} 
+
+@keyframes fadeInLeft { 
+  0% { 
+      opacity: 0; 
+      transform: translateX(-20px); 
+  } 
+  100% { 
+      opacity: 1; 
+      transform: translateX(0); 
+  } 
+} 
+.fadeInLeft { 
+  -webkit-animation-name: fadeInLeft; 
+  animation-name: fadeInLeft; 
+}
+
+
 html {
   height: 1000px;
+  overflow-x: hidden;
 }
 
 .mobile {
@@ -128,6 +223,8 @@ a:active,
 a:focus {
   /*background: #ADD8E6;*/
   background-color: #66CCFF;
+  text-shadow: 1px 1px 1px blue;
+  text-decoration: none;
 }
 
 .desktop {
