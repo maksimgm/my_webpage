@@ -18,11 +18,10 @@ $.ajax({
     var allPosts = data.response.posts;
     // console.log(data.response.posts[0].body);
 
-  allPosts.forEach(function(element, index){
-    console.log(allPosts[index]);
-    $blogbody.append(allPosts[index].body);
-    $blogbody.append("<br></br>");
+    allPosts.forEach(function(element, index){
+      console.log(allPosts[index]);
+      $blogbody.append(allPosts[index].body);
+      $blogbody.append("<hr></hr>");
+    });
   });
-});
-
 });
