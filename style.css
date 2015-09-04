@@ -155,7 +155,7 @@
 }
 
 
-html {
+html{
   height: 1000px;
   overflow-x: hidden;
 }
@@ -166,7 +166,8 @@ html {
   position: absolute;
   width: 100%;
   top: 0;
-  opacity: .7;
+
+  /*opacity: .7;*/
 }
 
 .mobile div {
@@ -184,6 +185,7 @@ html {
   border: 1px solid #003399;
   border-radius: 3px;
   background-size: 80%;
+  z-index: 1;
   width: 30px;
   height: 30px;
   outline: none;
@@ -195,7 +197,7 @@ html {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
-  background-color: transparent;
+  /*background-color: transparent;*/
   border: 0;
 }
 
@@ -205,14 +207,17 @@ html {
   float: right;
   font-family: fantasy;
   font-size: 20px;
+  font-weight: bold;
   color: #D86464;
+  opacity: .7;
+  /*background: transparent;*/
+  /*opacity: .8;*/
 }
 
 a {
   background: #eee;
   text-align: center;
   padding: 20px 0;
-  border-bottom: 1px solid black;
   text-decoration: none;
   color: #222;
   font-weight: bold;
@@ -225,6 +230,7 @@ a:focus {
   background-color: #66CCFF;
   text-shadow: 1px 1px 1px blue;
   text-decoration: none;
+  opacity: .8;
 }
 
 .desktop {
@@ -236,8 +242,6 @@ a:focus {
 
 .desktop a {
   color: #D86464;
-  /*background-color: #66CCFF;
-  color: #D86464;*/
   width: 25%;
   opacity: .8;
   float: left;
@@ -263,8 +267,18 @@ body{
 
 .body-p{
   font-size: 14px;
-  font-family: times;
+  
+  font-family: Palatino;
+  display: block;
 }
+
+/*h2,h4{
+  font-family: Palatino;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 2px;
+  margin-bottom: 1px;
+}*/
 
 .blogbody a{
   text-decoration: none;
@@ -294,6 +308,7 @@ body{
 
 .home-content p{
   line-height: 1.75;
+  font-family: Palatino;
 }
 
 #headshot{
@@ -348,7 +363,6 @@ body{
   width: 330px;
   margin-bottom: none;
   margin-top: 240px;
-  opacity: .80;
 }
 
 .writing-wrapper p{
@@ -356,13 +370,67 @@ body{
   color: beige;
   width: 100%
   font-size: 18px;
-  font-family: times;
+  font-family: Palatino;
   font-style: italic;
 }
 
 .write-author{
-  color: snow; 
   font-weight: bold;
   font-size: 24px;
   text-align: center;
+  font-family: Palatino;
+}
+
+.writing-animated{ 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-in; 
+    animation-timing-function: ease-in; 
+} 
+
+@-webkit-keyframes flip { 
+    0% { opacity: 0; -webkit-transform: translateX(-100%) rotate(-120deg); } 
+    100% { opacity: 1; -webkit-transform: translateX(0px) rotate(0deg); } 
+} 
+@keyframes flip { 
+    0% { opacity: 0; transform: translateX(-100%) rotate(-120deg); } 
+    100% { opacity: 1; transform: translateX(0px) rotate(0deg); } 
+} 
+.flip { 
+    -webkit-animation-name: flip; 
+    animation-name: flip; 
+}
+
+/*resume.html*/
+.titles{
+  font-family: Palatino;
+  font-size: 18px;
+  font-weight: none; 
+  letter-spacing: 2px;
+}
+
+.gh_body a, h4{
+  background: none;
+  font-family: Palatino;
+  font-size: 12px;
+  font-weight: none; 
+}
+
+h4{
+  font-size: 14px;
+}
+
+.gh_body a:hover,
+.gh_body a:active,
+.gh_body a:focus{
+  background-color: none;
+  text-shadow: none;
+  text-decoration: none;
+  opacity: 1.0;
+}
+
+h1,p{
+  font-family: Palatino;
 }
