@@ -38,6 +38,9 @@
   background: url("fractal.jpg") no-repeat center center ;
 }
 
+.jumbotron-resume{
+  background: url("lake.jpg") no-repeat center center ;
+}
 .jumbotron-blog{
   background: url("architecture.jpg") no-repeat center center ;
 }
@@ -46,9 +49,6 @@
   background: url("coffee-beans.jpg") no-repeat center center ;
 }
 
-.jumbotron-resume{
-  background: url("bridge.jpg") no-repeat center center ;
-}
 
 .jumbotron{
   max-width: 100%; 
@@ -298,7 +298,7 @@ body{
   text-align: center;
 }
 
-.bg-body-home{
+.cotent-container{
   margin: 0 auto;
   border: 2px solid #D86464;
   border-radius: 10px;
@@ -306,10 +306,50 @@ body{
   width: 80%
 }
 
+.cotent-container { 
+    -webkit-animation-duration: 2s; 
+    animation-duration: 2s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-in; 
+    animation-timing-function: ease-in; 
+} 
+
+@-webkit-keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+.fadeInUp { 
+    -webkit-animation-name: fadeInUp; 
+    animation-name: fadeInUp; 
+}
+
+
+
+
+/*
 .home-content p{
   line-height: 1.75;
   font-family: Palatino;
-}
+}*/
 
 #headshot{
   height: 200px;
@@ -335,11 +375,11 @@ body{
   margin-top: 5px;
 }
 
-.form-group{
+/*.form-group{
   padding-top: 20px;
   padding-bottom: 20px; 
 }
-
+*/
 /*footer*/
 
 .footer_button{
@@ -353,15 +393,9 @@ body{
 
 /*blog.html*/
 
-.writing-wrapper .row{
-  height: 100px;
-  width: 330px;
-}
-
 .writing-wrapper{
-  height: 100px;
+  height: 140px;
   width: 330px;
-  margin-bottom: none;
   margin-top: 240px;
 }
 
@@ -372,13 +406,6 @@ body{
   font-size: 18px;
   font-family: Palatino;
   font-style: italic;
-}
-
-.write-author{
-  font-weight: bold;
-  font-size: 24px;
-  text-align: center;
-  font-family: Palatino;
 }
 
 .writing-animated{ 

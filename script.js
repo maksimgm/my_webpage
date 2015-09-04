@@ -4,8 +4,6 @@ $('button').click(function() {
   $(this).toggleClass('expanded').siblings('div').slideToggle();
 });
 
-
-
 var $blogbody = $(".blogbody");
 var $gh_body = $(".gh_body");
 
@@ -17,8 +15,7 @@ jsonp:"callback",
 dataType: "jsonp",
 data:{"api_key": "K12MDiQTwWQuiMdrUiFjEwX6Qn1UmRT8f0X3EepEMp5ueJbDB9"},
 }).done(function(data){
-  // $blogbody.html("<p>'Hello'</p>");
-    var allPosts = data.response.posts;
+  var allPosts = data.response.posts;
   // console.log(data.response.posts[0].body);
 
   allPosts.forEach(function(element, index){
