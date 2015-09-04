@@ -342,15 +342,6 @@ body{
     animation-name: fadeInUp; 
 }
 
-
-
-
-/*
-.home-content p{
-  line-height: 1.75;
-  font-family: Palatino;
-}*/
-
 #headshot{
   height: 200px;
   width: 150px;
@@ -375,11 +366,6 @@ body{
   margin-top: 5px;
 }
 
-/*.form-group{
-  padding-top: 20px;
-  padding-bottom: 20px; 
-}
-*/
 /*footer*/
 
 .footer_button{

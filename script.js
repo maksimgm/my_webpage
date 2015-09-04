@@ -25,7 +25,7 @@ data:{"api_key": "K12MDiQTwWQuiMdrUiFjEwX6Qn1UmRT8f0X3EepEMp5ueJbDB9"},
   });
 });
 
-// github call for commits
+// github call for repos
 
 var response;
 $.ajax({
