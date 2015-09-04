@@ -431,6 +431,14 @@ body{
 }
 
 /*resume.html*/
+
+.gh_body a, h4{
+  background: none;
+  font-family: Palatino;
+  font-size: 12px;
+  font-weight: none;
+}
+
 .titles{
   font-family: Palatino;
   font-size: 18px;
@@ -438,17 +446,15 @@ body{
   letter-spacing: 2px;
 }
 
-.gh_body a, h4{
-  background: none;
-  font-family: Palatino;
-  font-size: 12px;
-  font-weight: none; 
+.titles, h4{
+  font-size: 19px;
 }
 
+/*
 h4{
   font-size: 14px;
 }
-
+*/
 .gh_body a:hover,
 .gh_body a:active,
 .gh_body a:focus{
