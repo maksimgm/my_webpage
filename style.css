@@ -156,7 +156,7 @@
 
 
 html{
-  height: 1000px;
+  height: 100%;
   overflow-x: hidden;
 }
 
@@ -250,7 +250,7 @@ a:focus {
   box-sizing: border-box;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 640px) {
   .mobile {
     display: block;
   }
@@ -262,12 +262,11 @@ a:focus {
 /*body*/
 
 body{
-  margin-bottom: 80px;
+  padding-bottom: 100px;
 }
 
 .body-p{
   font-size: 14px;
-  
   font-family: Palatino;
   display: block;
 }
