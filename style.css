@@ -378,7 +378,7 @@ body{
 
 /*blog.html*/
 
-.writing-wrapper{
+/*.writing-wrapper{
   height: 140px;
   width: 330px;
   margin-top: 240px;
@@ -414,7 +414,7 @@ body{
     -webkit-animation-name: flip; 
     animation-name: flip; 
 }
-
+*/
 /*resume.html*/
 
 .gh_body a, h4{
@@ -424,17 +424,28 @@ body{
   font-weight: none;
 }
 
+.techList{
+  overflow: scroll;
+}
+
 .titles{
   font-family: Palatino;
   font-size: 18px;
   font-weight: none; 
   letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .titles, h4{
   font-size: 19px;
 }
 
+.resumeTitles{
+  border: solid #D86464 2px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 10px;
+}
 /*
 h4{
   font-size: 14px;
